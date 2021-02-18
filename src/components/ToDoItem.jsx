@@ -17,7 +17,7 @@ const ToDoItem = ( props ) => {
           <h3>{props.todo.name}</h3>
           <button
               className="btn"
-              onClick={() => props.onClick(props.todo.id)}>
+              onClick={() => props.setComplete(props.todo.id)}>
               {text}
           </button>
           <button

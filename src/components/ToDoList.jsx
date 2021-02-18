@@ -5,12 +5,12 @@ const ToDoList = ( props ) => {
   return (
     <>
       {
-        props.toDos.map(item => 
+        props.todos.map(item => 
           <ToDoItem 
             todo={item} 
             key={item.id}
-            onClick={() => console.log("Nappia painettu")}
-            onRemoveClick={() => console.log("Nappia painettu")}  
+            setComplete={props.setComplete}
+            onRemoveClick={props.onRemoveClick}  
           />
         )
       }
