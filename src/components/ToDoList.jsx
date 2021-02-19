@@ -3,7 +3,7 @@ import ToDoItem from './ToDoItem';
 
 const ToDoList = ( props ) => {
     return (
-        <div>
+        <div className="list-container">
             {
                 props.todos.map(item => 
                     <ToDoItem 

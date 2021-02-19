@@ -20,8 +20,9 @@ const AddNewTodoItemBar = (props) => {
     };
 
     return (
+        <>
         <form
-            className="wrapper"            
+            className="add-new-todo-bar-container"            
             onSubmit={onSubmit}>
             <input
                 placeholder="Add new todo"
@@ -29,13 +30,14 @@ const AddNewTodoItemBar = (props) => {
                 onChange={onChangeName}
             />
             <button
-                className="btn btn-success"
+                className="btn btn-submit"
                 type="submit"
                 value="Submit">
-                Submit
-            </button>
-            {error}
+                Submit                
+            </button>            
         </form>
+        <p className="error">{error}</p>
+        </>
     );
 };
 

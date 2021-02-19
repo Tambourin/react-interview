@@ -1,33 +1,34 @@
 import React from 'react';
+import ok from '../static/completed-yes.svg';
+import no from '../static/completed-not.svg';
+import trashBin from '../static/lightbin.svg';
 
 const ToDoItem = ( props ) => {  
-    var color;
     var text;
 
     if (props.todo.complete === true) {
-        color = 'lightgreen';
         text = 'Complete';
     } else {
-        color = 'pink';
-        text = 'Incomplete';
+        text = 'Mark ready';
     }
 
     return (
-        <div className="todo-item" style={{backgroundColor: color}}>
-            <h3>{props.todo.name}</h3>
+        <div className={`todo-item ${props.todo.complete && "complete"}`} >
+            <p>{props.todo.name}</p>
             <button
-                className="btn"
+                className={`btn ${props.todo.complete && "btn-complete"}`}             
                 onClick={() => props.setComplete(props.todo.id)}
             >
-                {text}
+            <img src={props.todo.complete ? ok : no} alt="Mark ready" />              
             </button>
             <button
-                className="btn"
+                className="btn btn-trashbin"
                 onClick={() =>
                     props.onRemoveClick(props.todo.id)
                 }
             >
-              Remove from list
+              
+              <img src={trashBin} alt="Remove from list" />
             </button>
         </div>
     );

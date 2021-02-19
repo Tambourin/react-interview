@@ -6,7 +6,8 @@ import AddNewTodoItemBar from '../../components/AddNewToDoBar';
 describe('AddNewToddoBar test', () => {
     const setup = () => {        
         const addTodoMockFunction = jest.fn();
-        const { getByPlaceholderText, getByText } = render(<AddNewTodoItemBar addTodo={addTodoMockFunction} />);
+        const { getByPlaceholderText, getByText } = render(
+            <AddNewTodoItemBar addTodo={addTodoMockFunction} />);
         const input = getByPlaceholderText('Add new todo');
         const submitButton = getByText('Submit');
         return { input, submitButton, addTodoMockFunction };

@@ -16,7 +16,7 @@ const App = () => {
     const { todos, setComplete, addTodo, removeTodo } = useTodos(initialTodos);
 
     return (
-        <div>
+        <div className="container">
             <ToDoList 
                 todos={todos} 
                 setComplete={setComplete}

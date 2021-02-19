@@ -1,42 +1,95 @@
+html {
+  height: 100vh;
+  background-image: linear-gradient(#f3eef8, #ccb7e3);
+}
+
 body {
   margin: 40px auto;
   max-width: 480px;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 16px;
   color: #444;
-  padding: 0;
+  padding: 0;  
 }
 
-h1, h3 {
-  text-align: center;
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 1rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.add-new-todo-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+
+.error {
+  color: red;
+}
+
+/* todo list and list items */
+
+.list-container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border: none;
+  border-bottom: 2px dotted #c4c4c4;
 }
 
 .todo-item {
+  position: relative;
   display: grid;
-  grid-template-columns:  5fr 2fr 1fr;
-  border: solid 1px;
+  grid-template-columns:  5fr 1fr 1fr;
   margin-bottom: 2px;
+  padding-left: 1rem;
+  align-items: center;
+}
+
+.todo-item:nth-child(odd) {
+  background: #E8E8E8;
 }
 
 .complete {
   color: #c4c4c4 
 }
 
+/* buttons */
+
 .btn {
-  background-color: #444;
+  background-color: none;
   border: none; 
+  height: 100%;
   color: white;
   padding: 12px 16px;
-  font-size: 16px;
   cursor: pointer;
-  margin-left: 1px;
+}
+
+.btn img{
+  height: 20px;
 }
 
 .btn-complete {
-  background-color: #c4c4c4;
+  background-color: #5c948c; 
   color: white; 
 }
 
-.btn-success {
-  background-color: green;
+.btn-submit {
+  background-color: #ab6cc6;
+  border-radius: 50px;
+  margin-left: 1em;
 }
