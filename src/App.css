@@ -7,7 +7,6 @@ body {
   margin: 40px auto;
   max-width: 480px;
   line-height: 1.6;
-  font-size: 16px;
   color: #444;
   padding: 0;  
 }
@@ -35,7 +34,6 @@ input {
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
-  padding-bottom: 10px;
 }
 
 .error {
@@ -57,7 +55,6 @@ input {
   grid-template-columns:  5fr 1fr 1fr;
   margin-bottom: 2px;
   padding-left: 1rem;
-  align-items: center;
 }
 
 .todo-item:nth-child(odd) {

@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css';
 import useTodos from '../hooks/useTodos';
-import AddNewTodoItemBar from './AddNewToDoBar';
-import ToDoList from './ToDoList';
+import AddNewTodoItemBar from './AddNewTodoBar';
+import ToDoList from './TodoList';
 
 const App = () => { 
     const initialTodos = [

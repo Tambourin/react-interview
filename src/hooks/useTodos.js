@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 const useTodos = (initialTodos) => {
     const [ todos, setTodos ] = useState(initialTodos);
 
     const generateNewId = () => {
-        return todos.length + 1;
+        return uuidv4();
     };
 
     const setComplete = ( toDoId ) => {
