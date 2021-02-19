@@ -21,8 +21,7 @@ const AddNewTodoItemBar = (props) => {
 
     return (
         <form
-            className="wrapper"
-            style={{'gridTemplateColumns': '7fr 2fr'}}
+            className="wrapper"            
             onSubmit={onSubmit}>
             <input
                 placeholder="Add new todo"

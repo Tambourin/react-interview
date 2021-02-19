@@ -3,7 +3,7 @@ import ToDoItem from './ToDoItem';
 
 const ToDoList = ( props ) => {
     return (
-        <>
+        <div>
             {
                 props.todos.map(item => 
                     <ToDoItem 
@@ -14,7 +14,7 @@ const ToDoList = ( props ) => {
                     />
                 )
             }
-        </>
+        </div>
     );
 };
 

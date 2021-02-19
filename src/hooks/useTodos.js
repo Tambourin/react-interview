@@ -8,8 +8,10 @@ const useTodos = (initialTodos) => {
     };
 
     const setComplete = ( toDoId ) => {
-        setTodos(todos.map(item => item.id === toDoId ? {...item, complete: !item.complete} : item));
-        console.log(todos);
+        setTodos(todos.map(item => item.id === toDoId 
+            ? {...item, complete: !item.complete} 
+            : item
+        ));
     };
 
     const addTodo = (newTodoName) => {    

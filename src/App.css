@@ -11,7 +11,7 @@ h1, h3 {
   text-align: center;
 }
 
-.wrapper {
+.todo-item {
   display: grid;
   grid-template-columns:  5fr 2fr 1fr;
   border: solid 1px;

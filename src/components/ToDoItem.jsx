@@ -13,11 +13,12 @@ const ToDoItem = ( props ) => {
     }
 
     return (
-        <div className="wrapper" style={{backgroundColor: color}}>
+        <div className="todo-item" style={{backgroundColor: color}}>
             <h3>{props.todo.name}</h3>
             <button
                 className="btn"
-                onClick={() => props.setComplete(props.todo.id)}>
+                onClick={() => props.setComplete(props.todo.id)}
+            >
                 {text}
             </button>
             <button
